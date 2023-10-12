@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navlst {
+  list-style: none;
+  color: azure;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: azure;
+}
+.container {
+  height: 100%;
+  width: 100vw;
+  overflow-x: none;
+  background-color: #FFDEE9;
+background-image: linear-gradient(315deg, #FFDEE9 0%, #ffffff 38%, #ffffff 48%, #ffffff 60%, #ffffff 79%, #B5FFFC 99%);
+
+
+}
+.navcontainer {
+  width: 100vw;
+  height: 50px;
+  background: rgb(30,219,214);
+  background: linear-gradient(90deg, rgba(30,219,214,0.804359243697479) 2%, rgba(2,0,36,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 2rem;
+}
+#navlog {
+  font-size: 2rem;
+}
+nav {
+  width: 100%;
+}
+.footerbox{
+  width: 100vw;
+  height: 40px;
+  background-color: #030b2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerbox p{
+  color: azure;
+  font-size: 2rem;
+}
+body{
+  overflow-x: hidden;
+}
+.contentbox{
+  height:1200px;
+  background-color: #fff;
+  /* border: solid black 1px; */
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  box-shadow: 0px 0px 30px black;
+   padding: 2rem;
+}
+.item1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rightbox img{
+  border-radius: 20px;
+  width: 400px;
+  height: 100%;
+}
+.rightbox:hover{
+  transform: scale(1.1);
+}
+
+.leftbox{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.rightbox{
+  transition: all 0.3s linear 0s;
+  position: relative;
+  height: 300px;
+  
+}
+.rightbox .overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #2e6bb1c9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.3s linear 0s;
+}
+.rightbox .overlay:hover{
+  opacity: .5;
+}
+.rightbox .overlay span{
+  color: beige;
+  font-size: 50px;
+}
